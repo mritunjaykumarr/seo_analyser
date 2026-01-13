@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SEO Analyzer Tool</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <div class="container">
+    <h1>SEO Analyzer Tool</h1>
+
+    <div class="input-box">
+      <input id="urlInput" type="text" placeholder="Enter website URL" />
+      <button onclick="analyze()">Analyze</button>
+    </div>
+
+   <div id="resultSection" class="hidden">
+
+  <div class="result-grid">
+
+    <div class="score-card">
+      <svg width="140" height="140">
+        <circle cx="70" cy="70" r="60" class="bg-circle"></circle>
+        <circle cx="70" cy="70" r="60" class="progress-circle"></circle>
+      </svg>
+      <div class="score-text">
+        <span id="scoreValue">0</span>
+        <small>SEO Score</small>
+      </div>
+    </div>
+
+
+    <div class="summary-card">
+      <h3>SEO Summary</h3>
+      <p id="summaryText">Overall SEO health looks good.</p>
+    </div>
+  </div>
+
+ 
+  <div class="table-card">
+    <h3>SEO Report</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="reportTable"></tbody>
+    </table>
+  </div>
+
+</div>
+
+
+ 
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody id="reportTable"></tbody>
+      </table>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
